@@ -1,0 +1,80 @@
+# Node.js specific
+node_modules/
+package-lock.json
+yarn.lock
+npm-debug.log
+yarn-error.log
+
+# Build output
+dist/
+build/
+out/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# OS specific files
+.DS_Store
+Thumbs.db
+
+# Dependency directories
+bower_components/
+
+# Configuration files
+*.sublime-project
+*.sublime-workspace
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+
+# Test coverage
+coverage/
+
+# Production files
+*.prod.*
+
+# User-specific files
+*.user
+
+# Prettier and ESLint config
+.prettierignore
+.eslintignore
+
+# Compiled files
+*.pyc
+*.pyo
+*.pyd
+*.class
+*.jar
+*.war
+*.swf
+
+# SASS cache
+.sass-cache/
+
+# Log files
+*.log
+
+# Archives
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.gzip
+*.tar
+
+# Local development files
+*.local
+
+# Backup files
+*.bak
+*.old
