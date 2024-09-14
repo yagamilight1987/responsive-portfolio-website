@@ -1,0 +1,59 @@
+@font-face {
+  font-family: 'Inconsolata', monospace;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  font-display: swap;
+  src:
+    url('public/fonts/Inconsolata/inconsolata-variablefont_wdthwght-webfont.woff2') format('woff2'),
+    url('public/fonts/Inconsolata/inconsolata-variablefont_wdthwght-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inconsolata', monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  font-display: swap;
+  src:
+    url('public/fonts/Inconsolata/inconsolata-variablefont_wdthwght-webfont.woff2') format('woff2'),
+    url('public/fonts/Inconsolata/inconsolata-variablefont_wdthwght-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inconsolata', monospace;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  font-display: swap;
+  src:
+    url('public/fonts/Inconsolata/inconsolata-variablefont_wdthwght-webfont.woff2') format('woff2'),
+    url('public/fonts/Inconsolata/inconsolata-variablefont_wdthwght-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inconsolata', monospace;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  font-display: swap;
+  src:
+    url('public/fonts/Inconsolata/inconsolata-variablefont_wdthwght-webfont.woff2') format('woff2'),
+    url('public/fonts/Inconsolata/inconsolata-variablefont_wdthwght-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inconsolata', monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+  font-display: swap;
+  src:
+    url('public/fonts/Inconsolata/inconsolata-variablefont_wdthwght-webfont.woff2') format('woff2'),
+    url('public/fonts/Inconsolata/inconsolata-variablefont_wdthwght-webfont.woff') format('woff');
+}
