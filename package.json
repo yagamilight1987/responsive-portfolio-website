@@ -14,8 +14,8 @@
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
-    "tailwind:watch": "npx tailwindcss -i ./src/main.css -o ./css/tailwind.css --watch",
-    "tailwind:minify": "npx tailwindcss -i ./src/main.css -o ./css/tailwind.min.css --minify",
+    "tailwind:watch": "npx tailwindcss -i ./src/main.css -o ./public/css/tailwind.css --watch",
+    "tailwind:build": "npx tailwindcss -i ./src/main.css -o ./public/css/tailwind.css --minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
