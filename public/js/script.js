@@ -25,11 +25,58 @@ window.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  const menu = document.getElementById('nav');
+  document.getElementById('menu-btn').addEventListener('click', function () {
+    menu.classList.toggle('hidden');
+    document.body.setAttribute('data-menu-open', true);
+  });
+
+  document.getElementById('close-btn').addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+    document.body.setAttribute('data-menu-open', false);
+  });
+
   const navLinks = document.querySelectorAll('nav .nav-link');
   navLinks.forEach((link) => {
     link.addEventListener('click', function () {
       navLinks.forEach((el) => el.classList.remove('active'));
       this.classList.add('active');
+      menu.classList.toggle('hidden');
+      document.body.setAttribute('data-menu-open', false);
     });
+  });
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.set('.timeline .line', { height: 0 });
+
+  const descriptions = gsap.utils.toArray('.timeline .timeline-item p');
+  descriptions.map((item) => gsap.set(item, { opacity: 0 }));
+
+  let tl = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.timeline',
+      start: 'top 20%',
+      end: 'bottom top',
+      pin: true,
+      scrub: true,
+      invalidateOnRefresh: true,
+      markers: true,
+    },
+  });
+
+  const timelineItems = document.querySelector('.timeline-items');
+  const timelineItemsTop = timelineItems.getBoundingClientRect().top;
+
+  descriptions.map((item, index) => {
+    const height = item.getBoundingClientRect().top - timelineItemsTop;
+    console.log(height);
+    tl.to('.timeline .line', { height: `${height}px` })
+      .set('.timeline .line', { height: `${height}px` })
+      .to(item, { opacity: 1 });
+
+    if (index === descriptions.length - 1) {
+      tl.to('.timeline .line', { height: '100%' });
+    }
   });
 });
