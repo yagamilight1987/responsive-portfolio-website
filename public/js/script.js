@@ -24,4 +24,12 @@ window.addEventListener('DOMContentLoaded', () => {
       themeSelectorButton.setAttribute('data-theme', 'light');
     }
   });
+
+  const navLinks = document.querySelectorAll('nav .nav-link');
+  navLinks.forEach((link) => {
+    link.addEventListener('click', function () {
+      navLinks.forEach((el) => el.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
 });
