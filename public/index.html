@@ -11,18 +11,79 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="./css/font.css" />
-    <link rel="stylesheet" href="./css/tailwind.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-100">
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <h1 class="text-3xl font-light underline">Hello world!</h1>
-    <h1 class="text-3xl font-normal underline">Hello world!</h1>
-    <h1 class="text-3xl font-medium underline">Hello world!</h1>
-    <h1 class="text-3xl font-semibold underline">Hello world!</h1>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
-    <script src="./js/index.js" async defer></script>
+    <header>
+      <div class="container mx-auto flex items-center justify-between px-4 py-4">
+        <div class="text-2xl tracking-widest">
+          <a href="#home" class="">Work : Life : Fitness</a>
+        </div>
+        <div class="flex items-center">
+          <nav>
+            <ul class="flex">
+              <li class="px-4">
+                <a href="#home" class="nav-link active">home</a>
+              </li>
+              <li class="px-4">
+                <a href="#about" class="nav-link">about</a>
+              </li>
+              <li class="px-4">
+                <a href="#projects" class="nav-link">projects</a>
+              </li>
+              <li class="px-4">
+                <a href="#education" class="nav-link">education</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="theme-selector pl-4">
+            <svg class="light-mode icon stroke-teal-300" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+              ></path>
+            </svg>
+
+            <svg class="dark-mode icon fill-teal-600" data-slot="icon" fill="currentColor" stroke-width="1.5" stroke="none" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21.752 15.002A9.72 9.72 0 0 1 18 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 0 0 3 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 0 0 9.002-5.998Z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="container mx-auto flex h-screen flex-col items-center justify-center px-4 py-10">
+        <h1 class="text-5xl font-bold tracking-widest">NAMITH SCINDHIA</h1>
+        <h2 class="py-10 text-4xl">Frontend Developer</h2>
+        <p class="flex">
+          <svg class="icon stroke-teal-600" data-slot="icon" fill="none" stroke-width="1.5" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"></path>
+          </svg>
+          <span class="pl-2">BENGALURU (IT Capital of INDIA)</span>
+        </p>
+      </section>
+
+      <section id="about"></section>
+
+      <section id="projects"></section>
+
+      <section id="education"></section>
+    </main>
+
+    <footer>
+      <div class="container mx-auto flex items-center justify-center px-4 py-4">this is footer</div>
+    </footer>
+
+    <script src="./js/script.js" async defer></script>
   </body>
 </html>

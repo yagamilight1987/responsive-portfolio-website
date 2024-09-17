@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Global */
+@layer components {
+  .nav-link {
+    @apply text-teal-600 hover:text-teal-900 dark:hover:text-teal-300;
+
+    &.active {
+        @apply text-teal-900 dark:text-teal-300
+    }
+  }
+
+  .icon {
+    @apply h-6 w-6;
+  }
+}
+
+header {
+  .theme-selector {
+    &[data-theme='dark'] {
+      .light-mode {
+        @apply inline;
+      }
+
+      .dark-mode {
+        @apply hidden;
+      }
+    }
+
+    &[data-theme='light'] {
+      .light-mode {
+        @apply hidden;
+      }
+
+      .dark-mode {
+        @apply inline;
+      }
+    }
+  }
+}
