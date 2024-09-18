@@ -55,7 +55,7 @@ header {
   }
 }
 
-.about {
+.background {
   @apply container mx-auto py-20;
 
   ul.highlights {
@@ -75,32 +75,36 @@ header {
   }
 }
 
-.timeline {
-  @apply relative my-20;
+.journey {
+    @apply flex flex-col md:flex-row gap-10 items-center h-screen;
 
-  .line {
-    @apply absolute left-1/2 h-full -translate-x-1/2 transform border-l-2 border-slate-800 dark:border-slate-200;
-  }
+  .timeline {
+    @apply relative flex-1;
 
-  .timeline-items {
-    @apply flex flex-col space-y-8 py-10;
+    .line {
+      @apply absolute left-1/2 h-full -translate-x-1/2 transform border-l-2 border-slate-800 dark:border-slate-200;
+    }
 
-    .timeline-item {
-      @apply flex w-2/4 items-center space-x-4;
+    .timeline-items {
+      @apply flex flex-col space-y-8 py-10;
 
-      &:nth-child(even) {
-        @apply translate-x-full pl-5;
-      }
+      .timeline-item {
+        @apply flex w-2/4 items-center space-x-4;
 
-      &:nth-child(odd) {
-        @apply pr-5 text-right;
-      }
+        &:nth-child(even) {
+          @apply translate-x-full pl-5;
+        }
 
-      .timeline-item-container {
-        @apply flex-1;
+        &:nth-child(odd) {
+          @apply pr-5 text-right;
+        }
 
-        h3 {
-          @apply text-lg font-semibold;
+        .timeline-item-container {
+          @apply flex-1;
+
+          h3 {
+            @apply text-lg font-semibold;
+          }
         }
       }
     }

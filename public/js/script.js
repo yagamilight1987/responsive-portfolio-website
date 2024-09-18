@@ -55,8 +55,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
   let tl = gsap.timeline({
     scrollTrigger: {
-      trigger: '.timeline',
-      start: 'top 20%',
+      trigger: '.journey',
+      start: 'top top',
       end: 'bottom top',
       pin: true,
       scrub: true,
