@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'Titillium Web', system-ui;
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+    src: url('./fonts/TitilliumWeb-ExtraLight.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Titillium Web', system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+    src: url('./fonts/TitilliumWeb-Regular.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Titillium Web', system-ui;
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+    src: url('./fonts/TitilliumWeb-SemiBold.woff') format('woff');
+  }
+
+  @font-face {
+    font-family: 'Titillium Web', system-ui;
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+    src: url('./fonts/TitilliumWeb-Bold.woff') format('woff');
+  }
+
+  html {
+    @apply tracking-widest;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
